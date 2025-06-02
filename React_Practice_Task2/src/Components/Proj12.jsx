@@ -2,15 +2,15 @@ import React, { useEffect, useState } from "react";
 import '../assets/Css/NewsApp.css';
 
 function Proj12() {
-  const [articles, setArticles] = useState([]);
+const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch(`https://gnews.io/api/v4/top-headlines?lang=en&country=us&apikey=9a59772e2d0fd2ec8788816e49a7b600`)
+    fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=151876ee7f974639b61d55cb6c03bf8e`)
       .then(res => res.json())
       .then(data => {
-        if (data.articles) {
+        if (data.status === 'ok') {
           setArticles(data.articles);
           setError('');
         } else {
@@ -34,8 +34,8 @@ function Proj12() {
       <div className="news-list">
         {articles.map((article, idx) => (
           <div key={idx} className="news-card">
-            {article.image && (
-              <img src={article.image} alt={article.title} className="news-image" />
+            {article.urlToImage && (
+              <img src={article.urlToImage} alt={article.title} className="news-image" />
             )}
             <div className="news-content">
               <h3 className="news-title">{article.title}</h3>
