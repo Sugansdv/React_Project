@@ -1,0 +1,90 @@
+/* Project 1 */
+.blog-container.light {
+  background-color: #f8f8f8;
+  color: #212529;
+}
+
+.blog-container.dark {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.theme-toggle-btn {
+  transition: 0.3s;
+}
+
+.blog-form input,
+.blog-form textarea {
+  background-color: #fff;
+  color: #000;
+}
+
+.blog-card {
+  transition: all 0.3s ease;
+}
+
+/* Project 2 */
+
+.custom-input-group {
+  max-width: 500px;
+}
+
+.task-list-wrapper {
+  max-width: 500px;
+}
+
+.confirm-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-popup {
+  width: 300px;
+}
+
+/* Proj3 */
+.weather-container {
+  max-width: 400px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.weather-box {
+  background-color: #deebf7;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.loader {
+  font-weight: bold;
+  color: #007bff;
+}
+
+
+/* Proj4 */
+.user-manager {
+  max-width: 800px;
+  margin: auto;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+/* Proj5 */
+.product-page {
+  max-width: 900px;
+  margin: auto;
+}
+
+
+
+
